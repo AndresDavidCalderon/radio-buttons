@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/Switcher/Radio.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Button" type="Button" parent="."]
+margin_left = 220.0
+margin_top = 110.0
+margin_right = 364.0
+margin_bottom = 212.0
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 697.0
+margin_top = 81.0
+margin_right = 841.0
+margin_bottom = 183.0
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 383.0
+margin_top = 382.0
+margin_right = 527.0
+margin_bottom = 484.0
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 475.0
+margin_top = 174.0
+margin_right = 619.0
+margin_bottom = 276.0
+
+[node name="RadioSelector" type="Node" parent="."]
+script = ExtResource( 1 )
