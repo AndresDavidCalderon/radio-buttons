@@ -1,9 +1,11 @@
+##Makes sibling buttons a radio button list.
 extends Node
+
 signal selected(which)
 
 var selected:Button
 
-export var selectedidx:int
+export var selected_index:int
 
 func _ready():
 	get_parent().call_deferred("move_child",self,get_parent().get_child_count())
@@ -11,12 +13,14 @@ func _ready():
 		if i is Button:
 			i.toggle_mode=true
 			i.connect("toggled",self,"select",[i])
+	
 	if get_parent().get_child_count()>1:
-		if get_parent().get_child(selectedidx)==self:
-			selectedidx+=1
-		get_parent().get_child(selectedidx).pressed=true
+		if get_parent().get_child(selected_index)==self:
+			selected_index+=1
+		get_parent().get_child(selected_index).pressed=true
 
-func select(pressed,node):
+
+func select(pressed:bool,node:Button):
 	if pressed:
 		if node!=selected:
 			var selectedbefore=selected

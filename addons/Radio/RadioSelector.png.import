@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RadioSelector.png-87fe1a7bb556b4ee23cd18b92dfd6e7f.stex"
+path="res://.import/RadioSelector.png-4b32e15c64e3e030399f76ecf48d70ed.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/Switcher/RadioSelector.png"
-dest_files=[ "res://.import/RadioSelector.png-87fe1a7bb556b4ee23cd18b92dfd6e7f.stex" ]
+source_file="res://addons/Radio/RadioSelector.png"
+dest_files=[ "res://.import/RadioSelector.png-4b32e15c64e3e030399f76ecf48d70ed.stex" ]
 
 [params]
 
